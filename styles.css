@@ -115,10 +115,25 @@ body { background: #f8f3e8; color: var(--ink); }
       rgba(255,247,229,.9) 58%,
       rgba(255,247,229,.55) 100%);
   }
-  .hero-copy { width: 100%; padding: 32px 18px 34px; }
+  .hero-copy { width: 100%; padding: 54px 18px 34px; }
   .hero h1 { font-size: clamp(30px, 8vw, 36px); line-height: 1.12; letter-spacing: -.8px; }
   .hero p { max-width: 100%; font-size: 14px; line-height: 1.6; }
-  .hero-script { display: none; }
+  .hero-script {
+    display: block;
+    top: 9px;
+    right: 12px;
+    width: 88px;
+    padding: 6px 7px;
+    border: 1px solid rgba(35, 77, 64, .18);
+    border-radius: 9px;
+    background: rgba(255, 250, 238, .78);
+    color: #234d40;
+    font: 600 13px/1.18 'Noto Sans Tamil', 'Latha', sans-serif;
+    text-align: center;
+    text-shadow: none;
+    transform: none;
+    z-index: 2;
+  }
   .hero-buttons { gap: 10px; }
   .hero-buttons .btn { padding: 12px 14px; font-size: 12px; }
   .feature-strip { background: #e5ecdf; }
