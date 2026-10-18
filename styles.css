@@ -11,3 +11,122 @@
 @media(max-width:1050px){.topbar{padding:0 22px}.nav{gap:13px}.wrap{padding:0 22px}.section{padding-left:22px;padding-right:22px}.hero-copy{padding-left:22px}.dash-cards{grid-template-columns:repeat(2,1fr)}.subject-grid{grid-template-columns:repeat(3,1fr)}.course-layout{grid-template-columns:135px minmax(0,1fr)}.course-aside{grid-column:2;display:grid;grid-template-columns:1fr 1fr;gap:10px}.admin-stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){.topbar{height:58px;padding:0 14px}.brand{min-width:0}.brandname{font-size:23px}.brandname small{font-size:8px}.nav{display:none}.actions .btn:not(.primary){display:none}.actions .btn.primary{padding:9px 11px}.wrap{padding:0 14px}.hero{min-height:430px;background-position:56% center;align-items:flex-start}.hero:before{background:linear-gradient(90deg,rgba(250,241,222,.94),rgba(250,241,222,.72) 64%,rgba(250,241,222,.15))}.hero-copy{width:88%;padding:36px 0 25px 15px}.hero h1{font-size:36px}.hero-script{right:8%;top:60%;font-size:20px}.feature-strip{grid-template-columns:repeat(2,1fr);padding:15px 10px}.feature:last-child{grid-column:span 2}.section{padding:25px 14px}.section-heading{align-items:start;flex-direction:column;gap:10px}.section-heading h2{font-size:25px}.exam-grid{grid-template-columns:repeat(2,1fr);gap:9px}.exam-card{padding:11px;min-height:190px}.exam-card h3{font-size:16px}.learn-grid{grid-template-columns:1fr;gap:20px}.student-art{font-size:55px}.quote-band{margin:0 7px;padding:15px;flex-wrap:wrap}.quote-band .btn{margin:auto}.footer{padding:20px 14px;gap:10px;flex-wrap:wrap}
 .app-shell{grid-template-columns:1fr}.sidebar{min-height:0;padding:9px;flex-direction:row;overflow:auto;align-items:center;gap:4px;position:sticky;top:0;z-index:12}.side-brand{border:0;margin:0;padding:0 8px;min-width:max-content}.side-brand .brandmark{width:25px}.side-brand .brandname{font-size:16px}.side-brand .brandname small{display:none}.side-link{min-width:max-content;padding:9px;font-size:10px}.side-link span{width:auto}.side-link:not(.active){display:none}.app-main{padding:13px 10px}.app-top{align-items:flex-start}.welcome h1{font-size:19px}.welcome p{font-size:10px}.searchbox{display:none}.quote-tamil{display:none}.dash-cards{grid-template-columns:1fr 1fr;gap:7px}.panel{padding:10px}.panel h3{font-size:10px}.streak{font-size:21px}.subject-grid{grid-template-columns:repeat(2,1fr)}.progress-row-head h2{font-size:17px}.lower-dashboard{grid-template-columns:1fr}.course-layout{grid-template-columns:1fr}.module-panel{display:none}.course-aside{grid-column:1;grid-template-columns:1fr 1fr}.lesson-title{font-size:14px}.lesson-tabs{gap:13px;overflow:auto;white-space:nowrap}.video-slide{padding:10px;min-height:180px}.video-slide h2{font-size:18px}.video-slide ul{font-size:9px}.video-frame{min-height:180px}.admin-stats{grid-template-columns:1fr 1fr;gap:7px}.stat strong{font-size:18px}.admin-content{grid-template-columns:1fr}.activity-row{grid-template-columns:45px 1fr}.activity-row span:last-child{display:none}.quick-actions .btn{padding:9px 4px}.app-top .top-icons{gap:8px}}
+
+
+/* KBK Theme Test 02 — Tamil Heritage / Sage / Copper */
+:root {
+  --ink: #202b26;
+  --green: #103f35;
+  --green2: #245e4f;
+  --cream: #f8f3e8;
+  --paper: #fffcf5;
+  --sand: #eadbc4;
+  --gold: #b8754d;
+  --muted: #77786f;
+  --line: #dfd7c7;
+  --red: #a95f3d;
+  --shadow: 0 10px 28px rgba(26, 49, 39, .09);
+}
+
+body { background: #f8f3e8; color: var(--ink); }
+.topbar { background: rgba(255,252,245,.97); border-bottom-color: #e5ddce; }
+.nav a:hover, .text-link { color: #9b5d3d; }
+.btn.primary, .round-arrow { background: #103f35; border-color: #103f35; }
+.btn.cream { background: #f1d8b8; border-color: #f1d8b8; }
+
+/* Hero stays scenic; the image remains the focal point. */
+.hero { background-color: #e6d8bd; }
+.hero:before {
+  background: linear-gradient(90deg,
+    rgba(255, 247, 229, .96) 0%,
+    rgba(255, 247, 229, .88) 34%,
+    rgba(255, 247, 229, .25) 67%,
+    rgba(18, 48, 38, .08) 100%);
+}
+.eyebrow { color: #986344; }
+.hero-script { color: #234d40; text-shadow: 0 1px 10px rgba(255,250,238,.45); }
+
+/* Sage feature strip separates the hero from the exam choices. */
+.feature-strip {
+  background: #e5ecdf;
+  border-bottom: 1px solid #d2ddce;
+}
+.feature-icon { background: rgba(255,252,245,.65); border-color: #c5d3c3; }
+
+/* Light goal section, with restrained colour variation between cards. */
+#goals.section { background: #fbf7ee; }
+.exam-card {
+  border-color: #ded8c6;
+  box-shadow: 0 3px 12px rgba(45,55,43,.035);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.exam-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.exam-card:nth-child(1) { background: linear-gradient(145deg, #edf1e5, #dce7d8); }
+.exam-card:nth-child(2) { background: linear-gradient(145deg, #fff8ec, #f0dfc5); }
+.exam-card:nth-child(3) { background: linear-gradient(145deg, #eaf0ec, #d7e5df); }
+.exam-card:nth-child(4) { background: linear-gradient(145deg, #f9eee2, #ecd4bf); }
+.exam-art { color: #345749; }
+.round-arrow { background: #103f35; }
+
+/* Strong contrast and a new visual chapter for learning + Why KBK. */
+.section.learn-grid {
+  max-width: none;
+  margin: 0;
+  padding: 46px max(40px, calc((100vw - 1420px) / 2)) 48px;
+  background: #103f35;
+  color: #fff8e9;
+}
+.learn-grid .section-heading h2,
+.learn-grid h2.serif { color: #fff8e9; }
+.learn-grid .section-heading p { color: #c6d8ca; }
+.study-illustration .scribble { color: #e7c49d; }
+.student-art { color: #f6eddb; filter: grayscale(1); opacity: .92; }
+.why-item { color: #f7f2e7; }
+.why-icon {
+  color: #f8f1e3;
+  background: #245849;
+  border-color: rgba(231,196,157,.35);
+}
+
+/* Copper quotation band and deep footer complete the colour journey. */
+.quote-band {
+  background: linear-gradient(110deg, #96563b, #b8754d);
+  color: #fff5e4;
+  box-shadow: 0 8px 22px rgba(93,53,34,.13);
+}
+.quote-band .btn.cream { background: #fff1d9; border-color: #fff1d9; color: #253b30; }
+.footer { background: #182f28; color: #d0d9ce; }
+
+/* Keep dashboard cards coordinated with the new palette. */
+.appbody, .app-shell { background: #f5f3e9; }
+.sidebar { background: linear-gradient(160deg, #103f35, #0a2e27); }
+.stat-icon { background: #e3ece1; color: #245e4f; }
+.progress i, .coursebar i { background: #34745b; }
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: auto;
+    background-position: 58% center;
+    align-items: flex-start;
+  }
+  .hero:before {
+    background: linear-gradient(90deg,
+      rgba(255,247,229,.97) 0%,
+      rgba(255,247,229,.9) 58%,
+      rgba(255,247,229,.55) 100%);
+  }
+  .hero-copy { width: 100%; padding: 32px 18px 34px; }
+  .hero h1 { font-size: clamp(30px, 8vw, 36px); line-height: 1.12; letter-spacing: -.8px; }
+  .hero p { max-width: 100%; font-size: 14px; line-height: 1.6; }
+  .hero-script { display: none; }
+  .hero-buttons { gap: 10px; }
+  .hero-buttons .btn { padding: 12px 14px; font-size: 12px; }
+  .feature-strip { background: #e5ecdf; }
+  .section.learn-grid { padding: 32px 18px 36px; }
+  .exam-card:nth-child(1) { background: linear-gradient(145deg, #edf1e5, #dce7d8); }
+  .exam-card:nth-child(2) { background: linear-gradient(145deg, #fff8ec, #f0dfc5); }
+  .exam-card:nth-child(3) { background: linear-gradient(145deg, #eaf0ec, #d7e5df); }
+  .exam-card:nth-child(4) { background: linear-gradient(145deg, #f9eee2, #ecd4bf); }
+  .quote-band { background: linear-gradient(110deg, #96563b, #b8754d); }
+  .footer { background: #182f28; }
+}
